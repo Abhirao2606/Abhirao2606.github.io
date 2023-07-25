@@ -1,0 +1,283 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --navbar-height: 59px
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Navigation Bar */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgb(20, 18, 18);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    height: 56px;
+    margin: 3px 6px;
+
+}
+
+/* Navigation and list */
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 4px 22px;
+    border-radius: 20px;
+
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+
+}
+
+/* Home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 377px;
+    padding: 25px 200px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#home::before {
+    content: "";
+    background: url(../img/first.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 75%;
+    width: 100%;
+    z-index: -1;
+    /* flex-direction: column; */
+}
+
+#home h1 {
+    color: black;
+    text-align: center;
+}
+
+#home p {
+    color: black;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: cursive;
+}
+
+.first {
+    font-size: 3rem;
+    padding: 12px;
+}
+
+.second {
+    font-size: 3rem;
+    padding: 40px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.third {
+    text-align: center;
+}
+
+.btn {
+    padding: 4px 20px;
+    border: 2px solid rgb(41, 37, 37);
+    background-color: rgb(207, 76, 76);
+    margin: 15px;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    color: white;
+
+}
+
+.btn2 {
+    position: absolute;
+    left: 95%;
+}
+
+.center {
+    text-align: center;
+}
+
+/* service section */
+#service {
+    display: flex;
+    margin: 6px;
+    /* background-color: grey; */
+}
+
+#service .box {
+    border: 2px solid brown;
+    margin: 3px;
+    border-radius: 12px;
+    background-color: #f8efef;
+
+}
+
+#service .box img {
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+.fourth {
+    font-size: 3rem;
+    padding: 6px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.fifth {
+    font-size: 3rem;
+    padding: 6px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.sixth {
+    font-size: 3rem;
+    padding: 6px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.seventh {
+    font-size: 1.5rem;
+    margin: 34px;
+    padding: 3px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+#ourclient {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ourclient img {
+    height: 125px;
+    
+}
+
+.clientitem {
+    margin: 12px;
+    padding: 18px;
+}
+
+#paymentmode {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#paymentmode img {
+    height: 80px;
+}
+
+.paymentitem {
+    margin: 12px;
+    padding: 18px;
+}
+
+#contactlist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+    padding: 6px;
+}
+
+#contactlist img {
+    height: 50px;
+}
+
+.contactitem {
+    margin: 3px;
+    padding: 9px;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+#contactbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+
+#contactbox::before {
+    content: "";
+    position: absolute;
+    background: url(../img/contact.jpg) no-repeat center center/cover;
+    height: 90%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+#contactbox input,
+#contactbox textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contactbox form {
+    width: 40%;
+}
+
+#contactbox label {
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
